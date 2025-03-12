@@ -1,4 +1,4 @@
-# Game Clip Genre Tagger
+# Replay Tagger
 
 A PowerShell script for automatically tagging game clips recorded with NVIDIA Instant Replay. The script adds the parent folder name as a genre tag to each video file, which enables Plex to automatically create dynamic collections per game.
 
@@ -67,7 +67,7 @@ If you organize your game clips in folders by game name (e.g., a "Cyberpunk 2077
 5. For the action:
    - Select "Start a program"
    - Program/script: `powershell.exe`
-   - Add arguments: `-ExecutionPolicy Bypass -File "C:\path\to\VideoGenreTagger.ps1"`
+   - Add arguments: `-ExecutionPolicy Bypass -File "C:\path\to\ReplayTagger.ps1"`
 
 6. Review the settings and check "Open the Properties dialog when I click Finish"
 7. Under the "General" tab, select "Run whether user is logged on or not"
