@@ -45,7 +45,7 @@ If you organize your game clips in folders by game name (e.g., a "Cyberpunk 2077
 
 3. Run the script:
    ```powershell
-   .\VideoGenreTagger.ps1
+   .\ReplayTagger.ps1
    ```
 
 ## Automating the Script
@@ -57,7 +57,7 @@ If you organize your game clips in folders by game name (e.g., a "Cyberpunk 2077
    
    ![Task Scheduler - Create Task - Screenshot Placeholder](images/task-scheduler-create.png)
 
-3. Enter a name (e.g., "Game Clip Tagger") and description
+3. Enter a name (e.g., "Replay Tagger") and description
 4. Set the trigger:
    - Daily/Weekly: For regular maintenance
    - On startup: If you want to process after every boot
@@ -79,7 +79,7 @@ If you organize your game clips in folders by game name (e.g., a "Cyberpunk 2077
 
 ### macOS (Launchd)
 
-1. Create a plist file in `~/Library/LaunchAgents/` named `com.user.gamecliptagger.plist`:
+1. Create a plist file in `~/Library/LaunchAgents/` named `com.user.replaytagger.plist`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -87,12 +87,12 @@ If you organize your game clips in folders by game name (e.g., a "Cyberpunk 2077
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.user.gamecliptagger</string>
+    <string>com.user.replaytagger</string>
     <key>ProgramArguments</key>
     <array>
         <string>pwsh</string>
         <string>-File</string>
-        <string>/path/to/VideoGenreTagger.ps1</string>
+        <string>/path/to/ReplayTagger.ps1</string>
     </array>
     <key>StartCalendarInterval</key>
     <dict>
@@ -107,7 +107,7 @@ If you organize your game clips in folders by game name (e.g., a "Cyberpunk 2077
 
 2. Load the agent:
 ```bash
-launchctl load ~/Library/LaunchAgents/com.user.gamecliptagger.plist
+launchctl load ~/Library/LaunchAgents/com.user.replaytagger.plist
 ```
 
 3. This will run the script daily at 11:00 PM
@@ -121,7 +121,7 @@ crontab -e
 
 2. Add a line to run the script (e.g., daily at 11:00 PM):
 ```
-0 23 * * * pwsh /path/to/VideoGenreTagger.ps1
+0 23 * * * pwsh /path/to/ReplayTagger.ps1
 ```
 
 3. Save and exit
@@ -206,8 +206,14 @@ This allows Plex to automatically create collections based on the genre metadata
 
 ## Contributing
 
-Contributions are welcome! Feel free to submit pull requests with improvements.
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
+
+When reporting issues or requesting features, please use the provided issue templates:
+- For bugs: Use the Bug Report template
+- For feature ideas: Use the Feature Request template
+
+These templates will help ensure you provide all the necessary information.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
