@@ -2,6 +2,9 @@
 
 A PowerShell script for automatically tagging game clips recorded with NVIDIA Instant Replay. The script adds the parent folder name as a genre tag to each video file, which enables Plex to automatically create dynamic collections per game.
 
+![Dynamic Game Collections in Plex - Screenshot Placeholder](images/plex-collections-result.png)
+*The end result: Your game clips automatically organized into collections by game name in Plex*
+
 ## Purpose
 
 If you organize your game clips in folders by game name (e.g., a "Cyberpunk 2077" folder for all Cyberpunk clips), this script will:
