@@ -37,23 +37,41 @@ Thank you for your interest in contributing to Replay Tagger! Here are some guid
 
 If you find a bug or have a suggestion for improvement:
 
-1. Check the [issue tracker](https://github.com/iamclements/replaytagger/issues) to see if it's already been reported.
-2. If not, create a new issue with:
-   - A clear title
-   - A detailed description
-   - Steps to reproduce (for bugs)
-   - Your expected outcome
+1. Check the [issue tracker](https://github.com/yourusername/replay-tagger/issues) to see if it's already been reported.
 
-## Feature Requests
+2. If not, create a new issue by selecting one of the issue templates:
+   - **Bug Report**: Use the bug report template to provide detailed information about issues you encounter
+   - **Feature Request**: Use the feature request template to suggest new functionality
 
-Feature requests are welcome! Please provide:
+   These templates will guide you through providing the necessary information.
 
-- A clear description of the feature
-- Why it would be useful to the project
-- Any implementation ideas you have
+### Bug Reports
+
+When submitting a bug report, please use the bug report template which asks for:
+- A clear description of the problem
+- Steps to reproduce the issue
+- Your environment details (OS, PowerShell version, FFmpeg version)
+- Any error messages you received
+- Screenshots if applicable
+
+### Feature Requests
+
+When submitting a feature request, please use the feature request template which asks for:
+- A clear description of the proposed feature
+- The problem it solves or benefit it provides
+- Any implementation ideas you might have
+- How the feature would be used in practice
+
+## Pull Requests
+
+When submitting a pull request:
+1. Reference any related issues
+2. Describe the changes you've made
+3. Update any relevant documentation, including comments in the ReplayTagger.ps1 script
+4. Verify your changes work as expected
 
 ## Questions?
 
 If you have any questions about contributing, feel free to open an issue with your question.
 
-Thank you for contributing to make Game Clip Genre Tagger better!
+Thank you for contributing to make Replay Tagger better!
