@@ -2,8 +2,6 @@
 
 A PowerShell script for automatically tagging game clips recorded with NVIDIA Instant Replay. The script adds the parent folder name as a genre tag to each video file, which enables Plex to automatically create dynamic collections per game.
 
-![Script in Action - Screenshot Placeholder](images/script-in-action.png)
-
 ## Purpose
 
 If you organize your game clips in folders by game name (e.g., a "Cyberpunk 2077" folder for all Cyberpunk clips), this script will:
@@ -54,9 +52,6 @@ If you organize your game clips in folders by game name (e.g., a "Cyberpunk 2077
 
 1. Open Task Scheduler (search for it in the Start menu)
 2. Click "Create Basic Task" in the right panel
-   
-   ![Task Scheduler - Create Task - Screenshot Placeholder](images/task-scheduler-create.png)
-
 3. Enter a name (e.g., "Replay Tagger") and description
 4. Set the trigger:
    - Daily/Weekly: For regular maintenance
@@ -131,16 +126,12 @@ crontab -e
 ### Creating a Smart Collection for Each Game
 
 1. Open Plex and navigate to your library containing game clips
-   
-   ![Plex Library - Screenshot Placeholder](images/plex-library.png)
 
 2. Click on "Collections" in the left sidebar
 
-3. Click the "+" button to create a new collection
+3. Click the three-dot menu (⋮) in the top right of the screen
 
-4. Select "Smart Collection"
-   
-   ![Plex Smart Collection - Screenshot Placeholder](images/plex-smart-collection.png)
+4. Select "Create Smart Collection" from the dropdown menu
 
 5. In the "Rules" section:
    - Select "Genre" from the dropdown
@@ -160,16 +151,12 @@ crontab -e
 For even more automation, you can set up Plex to automatically create collections for all genres:
 
 1. Go to your library's settings
-   
-   ![Plex Library Settings - Screenshot Placeholder](images/plex-library-settings.png)
 
 2. Click on the "Advanced" tab
 
 3. Scroll down to "Collection Mode" and select "Hide items which are in collections"
 
 4. Under "Automatically create collections", select "By genre" or "By genre and first letter"
-   
-   ![Plex Automatic Collections - Screenshot Placeholder](images/plex-auto-collections.png)
 
 5. Save changes
 
@@ -201,8 +188,6 @@ The script:
 5. Creates temporary files during processing to ensure data integrity
 
 This allows Plex to automatically create collections based on the genre metadata, giving you a neatly organized game clip library.
-
-![Before and After - Screenshot Placeholder](images/before-after.png)
 
 ## Contributing
 
