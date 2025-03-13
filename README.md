@@ -205,3 +205,7 @@ These templates will help ensure you provide all the necessary information.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Disclaimer
+
+Much of this README and the supporting documentation was generated with the assistance of the Claude 3.7 Sonnet (Reasoning) model. While we've reviewed the content for accuracy, there may be errors or unclear instructions. If you encounter any issues with the documentation or have suggestions for improvement, please open an issue on GitHub to let us know.
