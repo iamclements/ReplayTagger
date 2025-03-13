@@ -1,4 +1,4 @@
-# VideoGenreTagger.ps1
+# ReplayTagger.ps1
 # Script to automatically tag game clips with genre metadata based on folder name
 # This enables Plex to create dynamic collections per game
 
